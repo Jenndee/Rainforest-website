@@ -1,0 +1,156 @@
+<html lang = "en">
+    <head>
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+<style>
+.title {
+    color: black;
+}
+.container {  display: grid;
+  grid-template-columns: 4fr 2fr 1fr;
+  grid-template-rows: 0.5fr 2.5fr 1fr 0.5fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "topnav topnav topnav"
+    "video form form"
+    "info form form"
+    "footer footer footer"; 
+}
+.form {
+    text-align: right; 
+    grid-area: form; 
+}
+
+.video { grid-area: video; }
+
+.info { grid-area: info; }
+
+.topnav { grid-area: topnav; }
+
+.footer { 
+grid-area: footer; 
+text-align: center
+;}
+
+
+
+</style>
+    </head>
+    <body>
+        <div class="topnav">
+        <a class="active" href="donate.html">Donate</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="home.html">Home</a>
+      </div>
+
+    <div class="title">    Sign up to our monthly donations and save the rainforest today!
+    </div>
+    <div class="container">
+        <div class="form">
+            <form>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="email">Enter your email:</label><br>
+                <input type="email" id="email" name="email"><br>
+            
+                <label for="phone">Enter your phone number:</label><br>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+        Would you like to sign up to our Newsletter?<br>
+                <input type="checkbox" id="options2" name="option1" value="donate">
+                <label for="option1"> Yes
+                </label><br>
+        How often would you like to make this donation?<br>
+                <input type="checkbox" id="options2" name="option1" value="donate">
+                <label for="option1">  Monthly</label>
+                <input type="checkbox" id="options2" name="option1" value="donate">
+                <label for="option1">  Quartley</label>
+                <input type="checkbox" id="options2" name="option1" value="donate">
+                <label for="option1">  Yearly</label><br>
+                <label for="amount">Amount (£)</label><br>
+                <input type="number" id="amount" name="amount"><br>
+        Please select your payment method:<br>
+        <input type="radio" id="paypal" name="payment" value="paypal">
+        <label for="payment">Paypal</label><br>
+        <input type="radio" id="bankt" name="payment" value="bankt">
+        <label for="bankt">Bank transfer</label><br>
+        <input type="radio" id="card" name="payment" value="card">
+        <label for="card">Card payment</label><br>
+        <button type="button" class="btn btn-outline-success">Donate</button>
+            </form>
+        </div>
+        <div class="video">
+            <iframe
+              width="800px"
+              height="400px"
+              src="https://www.youtube.com/embed/3vijLre760w"></iframe>
+          </div>
+        <div class="info">
+            <ul>What can your donation do?
+                <li>We use your donations to plant new trees in the rainforest</li>
+                <li>We lobby government organisations to do more in the fight to protect the rainforest</li>
+                <li>We educate those around us in how they can do their part to protect the rainforest</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            Thank you for saving the rainforest<br>
+            <footer>
+                <div class="footer">
+                    <div class="footer-content">
+                        <div class="footer-section about">
+                            <h1 class="logo-text">Conservation</h1>
+                            <p>Add description of website</p>
+                            <div class="footer-section contact">
+                                <span><i class= "fa fa-phone"></i> &nbsp;123-456-789</span>
+                                <span><i class= "fa fa-envelope"></i> &nbsp;info@conservation.com</span>
+                            </div>
+                            <div class="socials">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                
+                        <div class="footer-section links">
+                            <h2>Quick links</h2>
+                            <br>
+                            <ul>
+                                <a href="aboutus.html"><li>About us</li></a>
+                                <a href="donate.html"><li>Donate now</li></a>
+                            </ul>
+                        </div>
+                
+                        <div class="footer-section contact-form">
+                            <h2>Contact us</h2>
+                            <br>
+                            <form action="home.html" method="post">
+                                <input type="email" name="email" class="text-input contact-input" placeholder="Email address">   
+                                <textarea name="message" class="text-input contact-input" placeholder="Message"></textarea>
+                                <button type="submit" class=" btn btn-big contact btn">
+                                    <i class="fa fa-envelope"></i>
+                                    Submit
+                                </button>
+                            </form>
+                        </div>
+                
+                    <div class="footer-bottom">
+                     &copy; conservation.com  | Designed by Danniella, Jenna and Pragya
+                    </div>
+                </footer>
+            
+            <a href="https://www.Instagram.com/"><img src="https://www.pngfind.com/pngs/m/35-359187_instagram-logo-grey-png-gloucester-road-tube-station.png" alt="Instagram" style="width:42px;height:42px;"></a>
+            <a href="https://www.facebook.com/"><img src="https://www.pngfind.com/pngs/m/115-1153198_twitter-facebook-logo-grey-png-transparent-png.png" alt="Facebook" style="width:42px;height:42px;"></a>
+            <a href="https://www.twitter.com/"><img src="https://pngset.com/images/fun-twitter-icon-grey-images-twitter-white-circle-logo-stencil-symbol-text-bird-transparent-png-2536604.png" alt="twitter" style="width:42px;height:42px;"></a>
+        </div>
+      </div>
+    </footer>
+</body>
+
